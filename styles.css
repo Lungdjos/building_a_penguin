@@ -43,7 +43,7 @@ body {
     margin-top: -58px;
 }
 
-/* bacck mountain styling */
+/* back mountain styling */
 .back-mountain{
     width: 300px;
     height: 300px;
@@ -53,4 +53,15 @@ body {
     transform: rotate(45deg);
     left: 110px;
     top: 225px;
+}
+
+/* sun styling */
+.sun{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: -75px;
+    right: -75px;
 }
