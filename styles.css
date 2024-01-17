@@ -150,6 +150,25 @@ body {
     right: 15%;
 }
 
+/* styling for the top and bottom beak */
+.beak {
+    height: 10%;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.beak.top{
+    top: 60%;
+    width: 20%;
+    left: 40%;
+}
+
+.beak.bottom{
+    top: 65%;
+    width: 16%;
+    left: 42%;
+}
+
 /** THE PENGUIN BODY **/
 
 /* penguin body styling */
