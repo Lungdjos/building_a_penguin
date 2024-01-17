@@ -4,6 +4,8 @@
 :root{
     --penguin-face: white;
     --background-col: black;
+    --penguin-picorna: orange;
+    --penguin-skin: gray;
 }
 
 /* background styling */
@@ -52,7 +54,7 @@ body {
 .penguin-head{
     height: 45%;
     width: 50%;
-    background: linear-gradient(45deg, gray, rgb(239, 240, 228));
+    background: linear-gradient(45deg, var(--penguin-skin), rgb(239, 240, 228));
     border-radius: 70% 70% 65% 65%;
     top: 10%;
     left: 25%;
@@ -154,7 +156,7 @@ body {
 .beak {
     height: 10%;
     border-radius: 50%;
-    background-color: orange;
+    background-color: var(--penguin-picorna);
 }
 
 .beak.top{
@@ -187,7 +189,7 @@ body {
     position: absolute;
     height: 45%;
     width: inherit;
-    background-color: gray;
+    background-color: var(--penguin-skin);
     top: 10%;
     left: 23%;
     border-radius: 0% 0% 100% 100%;
@@ -210,6 +212,28 @@ body {
     font-weight: initial;
     top: 22.5px;
     left: 12px;
+}
+
+
+
+/* styling for the feet */
+.foot {
+    height: 30%;
+    width: 15%;
+    background-color: var(--penguin-picorna);
+    top: 90%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.foot.left {
+    left: 25%;
+    transform: rotate(80deg);
+}
+
+.foot.right {
+    right: 25%;
+    transform: rotate(-80deg);
 }
 
 /** THE MOUNTAIN **/
