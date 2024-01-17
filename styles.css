@@ -3,6 +3,7 @@
 /* root selector */
 :root{
     --penguin-face: white;
+    --background-col: black;
 }
 
 /* background styling */
@@ -84,6 +85,51 @@ body {
     top: 25%;
     left: 5%;
     border-radius: 70% 70% 100% 100%;
+}
+
+/* styling for both left and right eye */
+.eye {
+    width: 15%;
+    height: 17%;
+    background-color: var(--background-col);
+    top: 45%;
+    border-radius: 50%;
+}
+
+.eye.left{
+    left: 25%;
+}
+
+.eye.right{
+    right: 25%;
+}
+
+/* styling for both left and right iris */
+
+.iris{
+    width: 25%;
+    height: 27%;
+    background-color: var(--background-col);
+    top: 45%;
+    border-radius: 50%;
+}
+
+.iris.left{
+    left: 35%;
+}
+
+.iris.right{
+    right: 35%;
+}
+
+/* styling for both left and right eye-lids */
+.eye-lid{
+    height: 100%;
+    width: 150%;
+    background-color: var(--penguin-face);
+    top: 25%;
+    left: -23%;
+    border-radius: 50%;
 }
 
 /** THE PENGUIN BODY **/
