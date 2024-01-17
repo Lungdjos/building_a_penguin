@@ -24,7 +24,7 @@ body {
 /* ground styling */
 
 .ground {
-    height: 400px;
+    height: calc(100vh - 300px);
     width: 100vw;
     background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
     position: absolute;
@@ -42,6 +42,12 @@ body {
     margin-top: 75px;
     z-index: 4;
     position: relative;
+    transition: 1s ease-in-out 0s;
+}
+
+.penguin:active {
+    transform: scale(2.5);
+    cursor: not-allowed;
 }
 
 /* penguin-child elements styling */
@@ -314,12 +320,11 @@ body {
 
 @keyframes close-eyes {
     0%{
-        transform: skew(0deg, 180deg);
         width: 25%;
         height: 27%;
     }
     100%{
-        transform: skew(0deg, 180deg);
+        transform: scale(.3);
         width: 35%;
         height: 2%;
     }    
