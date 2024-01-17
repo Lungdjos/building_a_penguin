@@ -6,6 +6,7 @@
     --background-col: black;
     --penguin-picorna: orange;
     --penguin-skin: gray;
+    --neg-value: -1;
 }
 
 /* background styling */
@@ -214,7 +215,27 @@ body {
     left: 12px;
 }
 
+/* styling for the left and right arm */
+.arm {
+    width: 30%;
+    height: 60%;
+    background: linear-gradient(90deg, var(--penguin-skin), rgb(209, 210, 199));
+    border-radius: 30% 30% 30% 120%;
+    z-index: var(--neg-value);
+}
 
+.arm.left {
+    top: 35%;
+    left: 5%;
+    transform: rotate(130deg) scaleX(var(--neg-value));
+    transform-origin: 0% 0%;
+}
+
+.arm.right {
+    top: 0%;
+    right: -5%;
+    transform: rotate(-45deg);
+}
 
 /* styling for the feet */
 .foot {
@@ -223,7 +244,7 @@ body {
     background-color: var(--penguin-picorna);
     top: 90%;
     border-radius: 50%;
-    z-index: -1;
+    z-index: var(--neg-value);
 }
 
 .foot.left {
