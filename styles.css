@@ -132,6 +132,24 @@ body {
     border-radius: 50%;
 }
 
+/* styling the blushes both left and right */
+.blush{
+    height: 10%;
+    width: 15%;
+    background-color: pink;
+    opacity: 30%;
+    top: 62%;
+    border-radius: 50%;
+}
+
+.blush.left{
+    left: 15%;
+}
+
+.blush.right{
+    right: 15%;
+}
+
 /** THE PENGUIN BODY **/
 
 /* penguin body styling */
