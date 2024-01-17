@@ -24,6 +24,8 @@ body {
     margin-top: 100px;
 }
 
+/** THE PENGUIN STYLING **/
+
 /* penguin styling */
 .penguin{
     height: 300px;
@@ -33,6 +35,13 @@ body {
     z-index: 4;
     position: relative;
 }
+
+/* penguin-child elements styling */
+.penguin *{
+    position: absolute;
+}
+
+/** THE PENGUIN HEAD **/
 
 /* penguin head styling */
 .penguin-head{
@@ -45,6 +54,26 @@ body {
     z-index: 1;
 }
 
+/* face styling */
+.face {
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    border-radius: 70% 70% 60% 60%;
+    top: 15%;
+}
+
+/* face styling for left and right */
+.face.left{
+    left: 5%;
+}
+
+.face.right{
+    right: 5%;
+}
+
+/** THE PENGUIN BODY **/
+
 /* penguin body styling */
 .penguin-body{
     width: 55%;
@@ -53,11 +82,6 @@ body {
     border-radius: 80% 80% 100% 100%;
     top: 40%;
     left: 22.5%;
-}
-
-/* penguin-child elements styling */
-.penguin *{
-    position: absolute;
 }
 
 /* penguin chest */
@@ -72,6 +96,8 @@ body {
     border-radius: 0% 0% 100% 100%;
     opacity: 70%;
 }
+
+/** THE MOUNTAIN **/
 
 /* left mountain styling */
 .left-mountain{
